@@ -59,6 +59,8 @@ export default {
                'form-name': 'contact',
                ...this.form
             })
+            .then(() => this.$router.push('/success'))
+            .catch(() => this.$router.push('/fail'))
          })
       }
    }
